@@ -2,9 +2,10 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Cart from './Cart';
 import Nav from './Nav';
+import Search from './Search';
 
 const Logo = styled.h1`
-  font-size: 2rem;
+  font-size: 4rem;
   margin-left: 2rem;
   position: relative;
   z-index: 2;
@@ -39,12 +40,12 @@ export default function Header() {
     <HeaderStyles>
       <div className="bar">
         <Logo>
-          <Link href="/">Lucky Store</Link>
+          <Link href="/">Sick fits</Link>
         </Logo>
         <Nav />
       </div>
       <div className="sub-bar">
-        <p>Search</p>
+        <Search />
       </div>
       <Cart />
     </HeaderStyles>
